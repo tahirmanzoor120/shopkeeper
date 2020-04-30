@@ -19,13 +19,16 @@ class BillingFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        billingViewModel =
-            ViewModelProviders.of(this).get(BillingViewModel::class.java)
+
+        billingViewModel = ViewModelProviders.of(this).get(BillingViewModel::class.java)
+
         val root = inflater.inflate(R.layout.fragment_billing, container, false)
         val textView: TextView = root.findViewById(R.id.text_notifications)
+
         billingViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
+
         return root
     }
 }
