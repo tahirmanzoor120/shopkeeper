@@ -22,4 +22,10 @@
         android:name="com.tahirmanzoor.shopkeeper.ui.billing.BillingFragment"
         android:label="Billing"
         tools:layout="@layout/fragment_billing" />
+
+    <activity
+        android:id="@+id/navigation_new_product"
+        android:name="com.tahirmanzoor.shopkeeper.NewProductActivity"
+        android:label="activity_new_product"
+        tools:layout="@layout/activity_new_product" />
 </navigation>
